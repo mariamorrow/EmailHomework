@@ -12,6 +12,7 @@ class MenuTVC: UITableViewController {
     
     var dataDictionary: [String:Array<Email>] = [:]
     var selectedRow = ""
+    var menuselection = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +60,6 @@ class MenuTVC: UITableViewController {
         //TODO: get cell information
         let keywords = Array(dataDictionary.keys)
         selectedRow = keywords[indexPath.row]
-        
         //call segue manually
         performSegue(withIdentifier: "cellSelected", sender: self)
     }

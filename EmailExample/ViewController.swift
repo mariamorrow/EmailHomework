@@ -28,6 +28,8 @@ class ViewController: UIViewController, CellSelectedDelegate {
         titleLabel.text = email.subject
         senderLabel.text = email.sender
         contentsLabel.text = email.contents
+        
     }
-}
+
+    }
 
