@@ -86,6 +86,7 @@ class RootTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            print("delete")
             let deletedEmail = self.emails[indexPath.row]
             emails.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)

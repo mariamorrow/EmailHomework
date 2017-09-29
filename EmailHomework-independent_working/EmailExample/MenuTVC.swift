@@ -15,6 +15,7 @@ class MenuTVC: UITableViewController, EditEmailsDelegate {
     var menuselection = 0
     var cell_delegate: CellSelectedDelegate?
     var test: Email?
+    var editdelegate: EditEmailsDelegate?
 
 /*
    func addEmail(email: Email) {
@@ -24,12 +25,12 @@ class MenuTVC: UITableViewController, EditEmailsDelegate {
     }
 */
     func editEmail(action: String, context: String, email: Email) {
-        print(action)
+        print(context)
         switch action{
         case "add":
             print("add")
         case "delete":
-            print("delete")
+            print("delete_menuTVC")
         default:
             print("error")
         }
